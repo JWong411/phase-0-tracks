@@ -1,0 +1,20 @@
+Robot Elevator Pseudocode Challenge
+- Ask your master what floor he wishes to go to.
+  - If he gives a number that is available to press:
+    -Push the corresponding button
+- Else if he gives a number that is unavailable:
+  - Inform him that number is unavailable
+  - Ask if he is having a stroke or requires medical attention
+    - If he requires medical attention, get the attention of passersby and call 911.
+- Else (he ignores you,) stand there and await instruction. He's in one of his moods again.
+
+
+Tracking Down a Rare Pokemon in Pokemon Go Pseudocode Challenge
+
+- Choose a Pokemon from your tracker that you wish to track.
+  - Note how many footprints there are next to it.
+  - Walk 50 meters in a direction.
+    - If the number of footprints decreases:
+      - (You are headed in the right direction) Keep walking in that direction until you reach the Pokemon.
+    - Else if the number of footprints increases:
+      - Turn back and return to the "Walk 50 meters" step.
