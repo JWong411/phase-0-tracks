@@ -1,3 +1,31 @@
-body {
-  background-color: blue;
+header {
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+  padding: 3px;
+  color: red;
+}
+
+.column-1 {
+  display: inline-block;
+  border: 2px solid black;
+  float: left;
+  width: 48%;
+  background-image: url(https://assets-cdn.github.com/images/modules/logos_page/Octocat.png);
+}
+
+.column-2 {
+  display: inline-block;
+  border: 2px solid black;
+  float: right;
+  width: 48%;
+}
+
+footer {
+  display: block;
+  border: 2px solid black;
+  float: bottom;
+  margin-top: 10px;
+  clear: both;
+  font-family: Copperplate;
 }
