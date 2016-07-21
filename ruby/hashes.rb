@@ -1,16 +1,22 @@
+# Establish a hash
 client_info = {
 
 }
 
+# Prompt user for client information
 puts "Please input client's name."
+# Retrieve that information
 name = gets.chomp
+# Skip if user types 'none'
 if name == "none" 
   name = nil
 end
+# Put information in hash
 client_info[:name] = name
 
 
 puts "Please input client's age."
+# Convert information to proper type
 age = gets.chomp.to_i
 if age == "none" 
   age = nil
@@ -43,10 +49,14 @@ elsif smokerstatus == "n"
 end
 client_info[:smokerstatus] = smokerstatus
 
+# Print client info hash
 p client_info
 
+# Prompt user for changes
 puts "Is there something you'd like to change? (type 'none' if not)"
+# Retrieve response
 field = gets.chomp
+# Account for 'none', otherwise take change and replace current hash value with it
 if field != "none"
   puts "What value would you like it to be/have?"
   change = gets.chomp
