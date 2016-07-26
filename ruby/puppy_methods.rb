@@ -32,8 +32,12 @@ class Puppy
   
 end
 
-#spot = Puppy.new
-#spot.play_dead()
+spot = Puppy.new
+spot.fetch("ball")
+spot.speak(3)
+spot.roll_over
+spot.dog_years(2)
+spot.play_dead()
 
 class Pokemon
 
@@ -64,3 +68,5 @@ pokemons.each do |mons|
   mons.use_move("Thunderbolt")
   mons.took_damage(10)
 end
+
+
