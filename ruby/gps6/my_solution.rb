@@ -115,8 +115,19 @@ end
 #On your own, add a commented reflection section to yourmy_solution.rb file. Answer the following questions in your reflection:
 
 #What are the differences between the two different hash syntaxes shown in the state_data file?
+# The first syntax has the key written as a string with the => symbol to indicate the corresponding value, while the other syntax has the key as a symbol.
+
 #What does require_relative do? How is it different from require?
+# require_relative pulls in a file relative to the file you're in. 
+# in this case, the other file is in the same directory, but it doesn't have to be.
+# rule of thumb: require_relative is code you wrote, require is code others did.
+
 #What are some ways to iterate through a hash?
+# a loop, a each do block 
+
 #When refactoring virus_effects, what stood out to you about the variables, if anything?
+#they're shared by the two methods
+
 #What concept did you most solidify in this challenge?
+#ii think i had a lot of trouble grasping hashes and iterating through them, but something just clicked with this challenge. 
 
