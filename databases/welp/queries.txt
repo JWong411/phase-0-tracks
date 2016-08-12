@@ -1,0 +1,18 @@
+SELECT name,stars,comment,first_name,last_name, business_id,user_id FROM reviews,businesses,users WHERE reviews.business_id = businesses.id AND reviews.user_id = users.id;
+Grundy Hollow Wedding Chapel|0|Crappy catering|Angela|Jolie|1|3
+Amir's Towing|5|Quick and professional|Steven|Wonder|2|4
+The Beagle Nightclub|4|Great disco lights|Bradford|Pitt|3|1
+Lotus Yoga|5|I didn't tear an MCL|Mandy|Kaling|4|2
+Plumbing by Janet|2|Pants didn't fit|Denzel|George|5|7
+
+
+SELECT first_name,last_name, name, stars,comment FROM reviews,businesses,users WHERE reviews.business_id = businesses.id AND reviews.user_id = users.id;
+Angela|Jolie|Grundy Hollow Wedding Chapel|0|Crappy catering
+Steven|Wonder|Amir's Towing|5|Quick and professional
+Bradford|Pitt|The Beagle Nightclub|4|Great disco lights
+Mandy|Kaling|Lotus Yoga|5|I didn't tear an MCL
+Denzel|George|Plumbing by Janet|2|Pants didn't fit
+
+ SELECT first_name,last_name, name, stars,comment FROM reviews,businesses,users WHERE reviews.business_id = businesses.id AND reviews.user_id = users.id AND businesses.name = "The Beagle Nightclub";
+ 
+Bradford|Pitt|The Beagle Nightclub|4|Great disco lights
