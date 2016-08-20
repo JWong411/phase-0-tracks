@@ -17,10 +17,19 @@ get '/students/new' do
   erb :new_student
 end
 
+get '/students/by/campus' do
+  erb :campus
+end
+
 # create new students via
 # a form
 post '/students' do
   db.execute("INSERT INTO students (name, campus, age) VALUES (?,?,?)", [params['name'], params['campus'], params['age'].to_i])
+  redirect '/'
+end
+
+post '/students/by' do
+  db.execute("UPDATE students SET campus=(?) WHERE name=(?)", [params['campus'], params['name']])
   redirect '/'
 end
 
